@@ -8,6 +8,7 @@ import KQPic from "../assets/assets/kq.PNG";
 import BoldManagePic from "../assets/assets/boldmanage.PNG";
 import PigPic from "../assets/assets/pig.PNG";
 import salonwarehousePic from "../assets/assets/salonwarehouse.PNG";
+import portfolioPic from "../assets/assets/portfolio_pic.PNG";
 import Project from "./Project";
 
 function MyProjects() {
@@ -24,6 +25,12 @@ function MyProjects() {
       image: RickAndMorty,
       text: "This is a web application that uses the Rick and Morty api to query characters from the famous cartoon Series. It is built with Nextjs and Bootstrap.",
       link: "https://github.com/jonathan-baraza/rickandmorty",
+    },
+    {
+      name: "My portfolio",
+      image: portfolioPic,
+      text: "My portfolio project",
+      link: "https://jonathan-baraza.github.io/portfolio/",
     },
     {
       name: "Techsite Mobile App",
