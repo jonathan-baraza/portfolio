@@ -25,6 +25,8 @@ function MyProjects() {
       "https://api.github.com/users/jonathan-baraza/repos"
     );
 
+    console.log("projects data");
+    console.log(projectsData.data);
     setProjects(projectsData.data);
     setLoading(false);
   };
