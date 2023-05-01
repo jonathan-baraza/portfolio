@@ -1,4 +1,6 @@
 import React from "react";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import { AiOutlineGithub } from "react-icons/ai";
 import { MdOutlineFolder } from "react-icons/md";
 import { RiExternalLinkLine } from "react-icons/ri";
@@ -16,12 +18,37 @@ function ProjectCard({ project }) {
           <div className="d-flex align-items-center justify-content-between">
             <MdOutlineFolder size={50} className="text-cornflowerblue" />
             <div className="d-flex ">
-              <Link to={project.html_url} target="_blank">
-                <AiOutlineGithub className="me-2" color={"#7d88a4"} size={25} />
-              </Link>
-              <Link to={project.html_url} target="_blank">
-                <RiExternalLinkLine color={"#7d88a4"} size={25} />
-              </Link>
+              <OverlayTrigger
+                placement={"top"}
+                overlay={
+                  <Tooltip id={`tooltip`}>View project on github</Tooltip>
+                }
+              >
+                <Link to={project.html_url} target="_blank">
+                  <AiOutlineGithub
+                    className=" hoverEffectDown me-2"
+                    color={"#7d88a4"}
+                    size={25}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Link>
+              </OverlayTrigger>
+
+              {project.homepage && (
+                <OverlayTrigger
+                  placement={"top"}
+                  overlay={<Tooltip id={`tooltip`}>View Live Project</Tooltip>}
+                >
+                  <Link to={project.homepage} target="_blank">
+                    <RiExternalLinkLine
+                      className=" hoverEffectDown"
+                      color={"#7d88a4"}
+                      size={25}
+                      style={{ cursor: "pointer" }}
+                    />
+                  </Link>
+                </OverlayTrigger>
+              )}
             </div>
           </div>
           <div
