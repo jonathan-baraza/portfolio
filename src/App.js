@@ -1,17 +1,15 @@
 import "./App.css";
 import "animate.css";
 import { useEffect, useState, useRef } from "react";
-import Nav from "./components/Nav";
-import Banner from "./components/Banner";
-import AboutMe from "./components/AboutMe";
-import AOS from "aos";
-import MyTechStack from "./components/MyTechStack";
-import MyProjects from "./components/MyProjects";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { ImPointUp } from "react-icons/im";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Home from "./pages/Home";
+
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   const scrollRef = useRef(null);
@@ -29,28 +27,27 @@ function App() {
   }, []);
 
   return (
-    <div className="main">
-      <div className="cover">
-        <Nav />
-        <Banner />
-        <AboutMe />
-        <MyTechStack />
-        <MyProjects />
-        <ContactMe />
-        <Footer />
-        {showPointer && (
-          <ImPointUp
-            id="pointUp"
-            className="text-light animate__animated animate__pulse animate__slow animate__infinite"
-            size={25}
-            onClick={() => {
-              window.scrollTo(0, 0);
-            }}
-          />
-        )}
-        <ToastContainer />
-      </div>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Router>
+      {showPointer && (
+        <ImPointUp
+          id="pointUp"
+          className="text-light animate__animated animate__pulse animate__slow animate__infinite"
+          size={25}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          style={{ zIndex: "1000000" }}
+        />
+      )}
+
+      <ToastContainer />
+    </>
   );
 }
 
