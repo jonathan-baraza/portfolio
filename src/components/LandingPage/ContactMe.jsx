@@ -43,7 +43,7 @@ function ContactMe() {
         (result) => {
           setShowSpinner(false);
           if (result.text === "OK") {
-            toast.success("Message sent");
+            toast.success("Message sent, I will get back to you shortly.");
           } else {
             toast.error("Failed to send message");
           }
@@ -182,7 +182,7 @@ function ContactMe() {
                   name="name"
                   className="form-input mt-3 "
                   type="text"
-                  placeholder="Name"
+                  placeholder="Your Name"
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -194,7 +194,7 @@ function ContactMe() {
                   name="email"
                   className="form-input  mt-1 "
                   type="email"
-                  placeholder="Email"
+                  placeholder="Your Email"
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
@@ -205,7 +205,7 @@ function ContactMe() {
                   name="phone"
                   className="form-input  mt-1 "
                   type="number"
-                  placeholder="Phone Number"
+                  placeholder="Your Phone Number"
                   value={phone}
                   onChange={(e) => {
                     setPhone(e.target.value);
