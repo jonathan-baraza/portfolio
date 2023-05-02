@@ -15,31 +15,31 @@ function Banner() {
       <div
         id="bannerDiv"
         className="row me-0 ms-0 banner d-flex justify-content-center align-items-center pt-5 p-3"
-        style={{ position: "relative", minHeight: "100vh", width: "100%" }}
+        style={{ position: "relative", minHeight: "120vh", width: "100%" }}
       >
         <img
           src={reactIcon}
           alt="react-icon"
           className="rotate_icon"
-          style={{ left: "20px", top: "30%" }}
+          style={{ left: "20px", top: "20%" }}
         />
         <img
           src={nodeIcon}
           alt="node-icon"
           className="rotate_icon"
-          style={{ right: "20px", top: "30%" }}
+          style={{ right: "20px", top: "20%" }}
         />
         <img
           src={reduxIcon}
           alt="node-icon"
           className="rotate_icon"
-          style={{ left: "20px", bottom: "10px" }}
+          style={{ left: "20px", bottom: "25%" }}
         />
         <img
           src={graphqlIcon}
           alt="graphql-icon"
           className="rotate_icon"
-          style={{ right: "20px", bottom: "10px" }}
+          style={{ right: "20px", bottom: "25%" }}
         />
 
         <div className="col-sm-6 pb-3  ">
