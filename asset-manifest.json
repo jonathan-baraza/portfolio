@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a08c0fbd.css",
-    "main.js": "/portfolio/static/js/main.b187c1a3.js",
+    "main.js": "/portfolio/static/js/main.c6e89f33.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/herobg.png": "/portfolio/static/media/herobg.ad33add2430e34307c33.png",
     "static/media/moha_banner.png": "/portfolio/static/media/moha_banner.186e2f2ba793f92dce48.png",
     "static/media/techtenum_login.png": "/portfolio/static/media/techtenum_login.532fd85c8072934791b4.png",
-    "static/media/JonathanBarazaCV.pdf": "/portfolio/static/media/JonathanBarazaCV.ba215735584dacb8be20.pdf",
+    "static/media/JonathanBarazaCV.pdf": "/portfolio/static/media/JonathanBarazaCV.7d9c2587c6c8285f175e.pdf",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/media/aws.svg": "/portfolio/static/media/aws.165080254b8999e6b51c2c52fffc2593.svg",
     "static/media/react.svg": "/portfolio/static/media/react.3d0711bfbf4cb77eb8710f310e974d42.svg",
@@ -30,11 +30,11 @@
     "static/media/ts.svg": "/portfolio/static/media/ts.51c750049c057cb5f4c535424eb20c4f.svg",
     "static/media/css.svg": "/portfolio/static/media/css.632b6d133bdfb6cde391377b68148070.svg",
     "main.a08c0fbd.css.map": "/portfolio/static/css/main.a08c0fbd.css.map",
-    "main.b187c1a3.js.map": "/portfolio/static/js/main.b187c1a3.js.map",
+    "main.c6e89f33.js.map": "/portfolio/static/js/main.c6e89f33.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a08c0fbd.css",
-    "static/js/main.b187c1a3.js"
+    "static/js/main.c6e89f33.js"
   ]
 }
