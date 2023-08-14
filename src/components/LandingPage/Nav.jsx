@@ -5,7 +5,7 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div
-      className="m-0 p-0 "
+      className="m-0 p-0  "
       style={{ width: "100%", position: "absolute", top: "0", zIndex: "50000" }}
     >
       {" "}
