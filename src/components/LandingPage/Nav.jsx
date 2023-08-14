@@ -1,5 +1,5 @@
 import { useState } from "react";
-import resume from "../../assets/documents/JonathanBarazaCV.pdf";
+import resume from "../../assets/JonathanBarazaCV.pdf";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
